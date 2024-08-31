@@ -135,7 +135,7 @@ nav ul a {
   text-transform: uppercase;
   color: var(--purple);
   margin: 10px 0;
-  font-size: 13px;
+  font-size: 16px;
 }
 h4 {
   font-size: 30px;
@@ -208,7 +208,6 @@ h4 {
 .card:first-child .icon {
   background: var(--gold-yellow);
 }
-}
 .card:first-child .icon span {
   color: var(--purple);
 }
@@ -280,6 +279,33 @@ h4 {
   font-size: 14px;
   line-height: 20px;
   font-weight: lighter;
+}
+/* About the CEO */
+.about-ceo {
+  padding: 60px 0;
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+.about-ceo > div {
+  flex: 1 1 calc(50% - 20px);
+  box-sizing: border-box;
+  max-width: calc(50% - 20px);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+}
+.about-ceo > div img {
+  width: 90%;
+  border-radius: 20px;
+}
+.about-ceo > div p {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(131, 131, 131);
+  text-align: justify;
 }
 /* Contact us style */
 .contact-us {
@@ -407,6 +433,20 @@ footer ul li a {
     display: flex;
     align-items: center;
     gap: 30px;
+  }
+  .about-ceo {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .about-ceo > div img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: -50px;
+  }
+  .about-ceo > div {
+    flex: 1 1 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    box-shadow: none;
   }
   .contact-us {
     width: 92%;
